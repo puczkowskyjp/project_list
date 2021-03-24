@@ -1,13 +1,13 @@
 def fizzBuzz(num):
-    num_list = []
-    for number in range(: num):
-        if number % 3 == 0:
-            num_list.append('fizz')
+    for number in range(1, num+1):
+        if number % 3 == 0 and number % 5 == 0:
+            print('fizzBuzz')
+        elif number % 3 == 0:
+            print('fizz')
         elif number % 5 == 0:
-            num_list.append('buzz')
+            print('buzz')
         else:
-            num_list.append(number)
-    return num_list
+            print(number)
 
 
-fizzBuzz(10)
+fizzBuzz(20)
